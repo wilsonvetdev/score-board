@@ -1,21 +1,30 @@
 import React from 'react';
+
 import './App.css';
 import Header from './Header'
 import Player from './Player'
-import players from './PlayersArray'
+import playersArray from './PlayersArray'
 
-function App() {
+class App extends React.Component {
 
-  let arrayOfPlayerComponents = players.map((player) => {
-    return <Player key={player.id} name={player.name} score={player.score} />
-  })
+  state = {
+    players: playersArray
+  }
 
-  return (
-    <div className='scoreboard'>
-      <Header title='Scoreboard' totalPlayers={arrayOfPlayerComponents.length} />
-      { arrayOfPlayerComponents }
-    </div>
-  )
+  render() {
+    
+    let arrayOfPlayerComponents = playersArray.map((player) => {
+      return <Player key={player.id} name={player.name} score={player.score} />
+    })
+  
+    return (
+      <div className='scoreboard'>
+        <Header title='Scoreboard' totalPlayers={arrayOfPlayerComponents.length} />
+        { arrayOfPlayerComponents }
+      </div>
+    )
+
+  }
 }
 
 export default App;
