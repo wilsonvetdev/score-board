@@ -42,8 +42,8 @@ class App extends React.Component {
         return player
       }
     })
-    this.setState({
-      players: copyOfPlayers
+    this.setState(() => {
+      return {players: copyOfPlayers}
     })
   }
 

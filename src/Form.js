@@ -26,7 +26,6 @@ class Form extends React.Component {
     }
 
     render(){
-        console.log(this.state.value)
         return(
             <form onSubmit={this.handleSubmit}>
                 <input
