@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Stats(props) {
 
@@ -16,6 +17,11 @@ function Stats(props) {
             </tbody>
         </table>
     )
+}
+
+Stats.propTypes = {
+    totalPlayers: PropTypes.number,
+    totalScores: PropTypes.number
 }
 
 export default Stats

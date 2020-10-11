@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Stats from './Stats'
 import Stopwatch from './Stopwatch'
 
@@ -13,6 +14,11 @@ function Header(props) {
             </header>
         </div>
     )
+}
+
+Header.propTypes = {
+    title: PropTypes.string,
+    totalPlayers: PropTypes.number
 }
 
 export default Header
