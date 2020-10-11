@@ -21,4 +21,8 @@ Header.propTypes = {
     totalPlayers: PropTypes.number
 }
 
+Header.defaultProps = {
+    title: 'Scoreboard'
+}
+
 export default Header

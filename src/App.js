@@ -53,9 +53,24 @@ class App extends React.Component {
       updatedPlayer.score += delta 
       this.updatePlayerFromState(updatedPlayer)
   }
+
+  getHighestScore = () => {
+    let scores = this.state.players.map((player) => player.score)
+    let highScore = Math.max(...scores)
+    if (highScore) {
+      return highScore;
+    } 
+    return null;
+  }
   
 
   render() {
+
+    let totalScores = this.state.players.reduce((total, player) => {
+      return total + player.score
+    }, 0)
+
+    let highScore = this.getHighestScore()
     
     let arrayOfPlayerComponents = this.state.players.map((player) => {
       return <Player 
@@ -64,16 +79,13 @@ class App extends React.Component {
                 id={player.id}
                 handleRemovePlayer={this.handleRemovePlayer}
                 changeScore={this.handleScoreChange}
+                isHighScore={highScore === player.score} 
               />
     })
-
-    let totalScores = this.state.players.reduce((total, player) => {
-      return total + player.score
-    }, 0)
   
     return (
       <div className='scoreboard'>
-        <Header title='Scoreboard' 
+        <Header
           totalPlayers={arrayOfPlayerComponents.length} 
           totalScores={totalScores}
         />

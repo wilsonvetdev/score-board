@@ -1,21 +1,21 @@
 const playersArray = [
     {
-        name: "Guil",
+        name: "Player One",
         score: 0,
         id: 1
     },
     {
-        name: "Treasure",
+        name: "Player Two",
         score: 0,
         id: 2
     },
     {
-        name: "Ashley",
+        name: "Player Three",
         score: 0,
         id: 3
     },
     {
-        name: "James",
+        name: "Player Four",
         score: 0,
         id: 4
     }
