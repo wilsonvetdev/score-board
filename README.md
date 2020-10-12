@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## React Practice App
+
+I am learning React in Flatiron at the moment, and created this app while coding along on Treehouse. It is a single-page application to keep track of player scores with two buttons.
+You can also customize the names of the players. Just delete all the default players, and then add new players with their names.
+
 ## Available Scripts
 
 In the project directory, you can run:
