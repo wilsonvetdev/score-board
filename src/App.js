@@ -5,6 +5,7 @@ import Header from './Header'
 import Player from './Player'
 import playersArray from './PlayersArray'
 import Form from './Form'
+import Banner from './Banner'
 
 class App extends React.Component {
 
@@ -85,6 +86,7 @@ class App extends React.Component {
   
     return (
       <div className='scoreboard'>
+        <Banner />
         <Header
           totalPlayers={arrayOfPlayerComponents.length} 
           totalScores={totalScores}
