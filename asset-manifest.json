@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/score-board/static/css/main.d3fc8a07.chunk.css",
+    "main.js": "/score-board/static/js/main.d476a23a.chunk.js",
+    "main.js.map": "/score-board/static/js/main.d476a23a.chunk.js.map",
+    "runtime-main.js": "/score-board/static/js/runtime-main.801d5e3e.js",
+    "runtime-main.js.map": "/score-board/static/js/runtime-main.801d5e3e.js.map",
+    "static/js/2.ada3ea10.chunk.js": "/score-board/static/js/2.ada3ea10.chunk.js",
+    "static/js/2.ada3ea10.chunk.js.map": "/score-board/static/js/2.ada3ea10.chunk.js.map",
+    "index.html": "/score-board/index.html",
+    "precache-manifest.626bcdf1e02d70a1cbe11a09546a62dc.js": "/score-board/precache-manifest.626bcdf1e02d70a1cbe11a09546a62dc.js",
+    "service-worker.js": "/score-board/service-worker.js",
+    "static/css/main.d3fc8a07.chunk.css.map": "/score-board/static/css/main.d3fc8a07.chunk.css.map",
+    "static/js/2.ada3ea10.chunk.js.LICENSE.txt": "/score-board/static/js/2.ada3ea10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.801d5e3e.js",
+    "static/js/2.ada3ea10.chunk.js",
+    "static/css/main.d3fc8a07.chunk.css",
+    "static/js/main.d476a23a.chunk.js"
+  ]
+}
